@@ -46,4 +46,74 @@ Server/workspace admins control where Pipeline Bot can operate by:
 - Integration settings (which external services are enabled)
 
 You are responsible for:
-- Correctly configuring channel
+- Correctly configuring channel allowlists/denylists
+- Ensuring the bot does not have more permissions than needed (least privilege)
+- Managing credentials and secrets securely (see “Security” below)
+
+---
+
+## 5) Outputs, Accuracy, and Reliability
+Pipeline Bot outputs (including any AI-generated text) may be incomplete, inaccurate, or outdated. You agree that:
+- **You will not rely on Pipeline Bot output as professional advice** (legal, medical, financial, security, compliance, etc.).
+- You are responsible for reviewing and approving any action or content before using it externally or in production.
+
+We do not guarantee uninterrupted operation, or that workflows will always produce correct results.
+
+---
+
+## 6) Third-Party Services
+Pipeline Bot may integrate with third-party services (e.g., Discord, AI model providers, hosting providers, calendar APIs). Your use of those services is governed by their terms.
+
+Depending on your configuration, some message content and metadata may be sent to third parties to provide functionality (see Privacy Policy).
+
+---
+
+## 7) Security
+You are responsible for securing your deployment, including:
+- Storing secrets in a secure vault/credential manager (not in Discord messages or repos)
+- Rotating tokens and API keys when needed
+- Restricting bot permissions and channel access
+- Keeping your automation stack updated (n8n, database, gateway services, etc.)
+
+While we may provide guidance, **you are responsible for your security posture**.
+
+---
+
+## 8) Intellectual Property
+You retain ownership of your content. We retain ownership of Pipeline Bot software, branding, and documentation (except where otherwise stated).
+
+If you provide feedback, you grant us the right to use it to improve the service without obligation.
+
+---
+
+## 9) Termination
+You can stop using Pipeline Bot at any time by removing it from your server/workspace and disabling workflows.
+
+We may suspend or terminate access if:
+- Required to comply with law
+- Necessary to prevent abuse or security risks
+- You violate these Terms
+
+---
+
+## 10) Disclaimers
+PIPELINE BOT IS PROVIDED “AS IS” AND “AS AVAILABLE,” WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+---
+
+## 11) Limitation of Liability
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, FORGELABS WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF DATA, PROFITS, OR REVENUE ARISING FROM YOUR USE OF PIPELINE BOT.
+
+OUR TOTAL LIABILITY FOR ANY CLAIM RELATING TO PIPELINE BOT WILL NOT EXCEED THE AMOUNT YOU PAID (IF ANY) TO USE PIPELINE BOT IN THE TWELVE (12) MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM.
+
+---
+
+## 12) Changes to These Terms
+We may update these Terms from time to time. If changes are material, we will update the Effective Date. Continued use after updates means you accept the updated Terms.
+
+---
+
+## 13) Contact
+Questions about these Terms:
+**ForgeLabs Automation**  
+Email: support@forgelabsautomation.com
