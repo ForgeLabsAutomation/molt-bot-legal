@@ -1,0 +1,49 @@
+# Terms of Service — Pipeline Bot
+**Effective Date:** YYYY-MM-DD
+
+These Terms of Service (“Terms”) govern access to and use of **Pipeline Bot**, an automation bot operated by **ForgeLabs Automation** (“ForgeLabs,” “we,” “us,” “our”). By installing, using, or interacting with Pipeline Bot, you agree to these Terms.
+
+> **Not Legal Advice.** This document is provided for informational purposes and is not legal advice. You should consult a qualified attorney to ensure your policies fit your jurisdiction and use case.
+
+---
+
+## 1) What Pipeline Bot Does
+Pipeline Bot is an automation assistant that can:
+- Read messages in channels where it is authorized (e.g., “orders/intake” channels)
+- Trigger automation workflows (e.g., task planning, queue processing, posting results)
+- Post outputs to designated output channels (e.g., summaries, review packets, logs)
+- Optionally call external services and APIs (e.g., AI model providers, calendars, CRMs) depending on configuration
+
+Pipeline Bot may run on self-hosted infrastructure controlled by you or your organization.
+
+---
+
+## 2) Eligibility and Authority
+You represent that you are authorized to:
+- Install Pipeline Bot in a Discord server, workspace, or environment you control or administer, and
+- Grant the permissions required for it to operate.
+
+If you use Pipeline Bot on behalf of an organization, you represent you have authority to bind that organization.
+
+---
+
+## 3) Acceptable Use
+You agree not to use Pipeline Bot to:
+- Break the law or violate third-party rights
+- Transmit malware, exploit vulnerabilities, or perform unauthorized access
+- Harass, threaten, or harm others
+- Attempt to extract secrets, tokens, credentials, or private data from systems
+- Use the bot to post or process content that violates platform policies (Discord, etc.)
+
+We may suspend or disable access if we reasonably believe usage violates these Terms or creates risk.
+
+---
+
+## 4) Admin Responsibility and Configuration
+Server/workspace admins control where Pipeline Bot can operate by:
+- Discord permissions (channels, roles)
+- Workflow configuration (which channels are treated as intake/output)
+- Integration settings (which external services are enabled)
+
+You are responsible for:
+- Correctly configuring channel
