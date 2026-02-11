@@ -1,0 +1,126 @@
+# Privacy Policy — Pipeline Bot
+**Effective Date:** YYYY-MM-DD
+
+This Privacy Policy explains how **Pipeline Bot**, operated by **ForgeLabs Automation** (“ForgeLabs,” “we,” “us,” “our”), collects, uses, shares, and retains information.
+
+> **Not Legal Advice.** This document is provided for informational purposes and is not legal advice. Consult counsel for your jurisdiction and product model.
+
+---
+
+## 1) Summary
+Pipeline Bot is an automation bot that may:
+- Read messages in authorized channels
+- Process messages to execute workflows (e.g., task planning, queue processing, posting summaries/review packets)
+- Store workflow state and logs in a database (often self-hosted)
+- Optionally send limited content to third-party services (e.g., AI providers) depending on configuration
+
+Admins control where Pipeline Bot operates using Discord permissions and workflow settings.
+
+---
+
+## 2) Information We Collect
+Depending on configuration, Pipeline Bot may process:
+
+### A) Message Content
+- The text you post in channels where Pipeline Bot is active (e.g., orders/intake channels)
+- Content needed to complete the requested automation tasks
+
+### B) Message and Server Metadata
+- Discord message ID, channel ID, server/guild ID
+- Author ID and display name (if provided by the platform)
+- Timestamps
+- References/links contained in messages
+
+### C) Workflow and System Logs
+- Workflow execution status (queued/processing/done/failed/blocked)
+- Error logs and debugging information
+- Output pointers (e.g., which message ID a result was posted to)
+
+### D) Integrations Data (If Enabled)
+If you connect external services (calendar, CRM, ticketing, email), Pipeline Bot may process:
+- Scheduling details (availability, booking confirmations)
+- Lead capture fields (name/email/phone, intent)
+- IDs and metadata from those systems
+
+### E) Sensitive Data
+You should avoid sending secrets (API keys, passwords, tokens) via Discord messages. If such data is posted in channels where Pipeline Bot operates, it may be processed incidentally.
+
+---
+
+## 3) How We Use Information
+We use information to:
+- Execute requested workflows and automations
+- Create and update queue/task state (e.g., epics, work items, review items)
+- Post results into configured channels
+- Troubleshoot failures and improve reliability
+- Prevent abuse and enforce security guardrails
+
+---
+
+## 4) How We Share Information
+We may share information with:
+
+### A) Discord
+Pipeline Bot necessarily exchanges data with Discord to read messages and post outputs.
+
+### B) Service Providers (If Enabled)
+Depending on your configuration, Pipeline Bot may send data to:
+- AI model providers (to generate plans, summaries, drafts)
+- Hosting providers (where you deploy the bot/workflows)
+- Database providers
+- Scheduling/Calendar providers (Calendly, Google/Microsoft calendar APIs)
+- Other integrations you enable (CRM/ticketing/email)
+
+**Important:** You control which integrations are enabled. If AI features are enabled, message content (or extracts) may be sent to an AI provider to produce outputs.
+
+### C) Legal/Protection
+We may disclose information if required by law, or to protect rights, safety, and security.
+
+---
+
+## 5) Data Retention
+Retention depends on your deployment and configuration. Recommended defaults:
+- Queue/workflow state: retain while active, and for a limited period for auditing (e.g., 30–90 days)
+- Logs: retain for troubleshooting (e.g., 14–30 days)
+- Outputs posted to Discord: retained per Discord’s policies and server settings
+
+Admins may delete data by removing workflows, clearing database tables, or removing the bot from the server. If you want stricter retention, implement an automated purge job.
+
+---
+
+## 6) Security
+We recommend:
+- Least-privilege permissions for the bot
+- Storing secrets in an external secrets manager (not Discord, not GitHub)
+- Rotating tokens regularly
+- Restricting bot access to specific channels (allowlist)
+- Encrypting data in transit (HTTPS) and at rest where supported
+
+No system is perfectly secure; you are responsible for deployment security, especially when self-hosting.
+
+---
+
+## 7) Your Choices and Rights
+Server admins control:
+- Which channels Pipeline Bot can access
+- Whether AI/integrations are enabled
+- Whether logs and databases are retained or purged
+
+If you need access/deletion assistance for a managed deployment, contact us.
+
+---
+
+## 8) Children’s Privacy
+Pipeline Bot is not intended for use by children under 13. Do not use it in environments intended for children.
+
+---
+
+## 9) Changes to This Policy
+We may update this policy from time to time. We will update the Effective Date. Continued use after updates means you accept the updated policy.
+
+---
+
+## 10) Contact
+Privacy questions or requests:
+**ForgeLabs Automation**  
+Email: support@forgelabsautomation.com
